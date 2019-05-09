@@ -20,6 +20,9 @@
   * AVR8, STM32, EFM32
   * Git
   * Linux
+  * Docker
+  * PCB
+  * CI
 * Preferred OS: Ubuntu
 * Preferred editor: Visual Studio Code
 * Tabs or spaces: Spaces
