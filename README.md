@@ -84,10 +84,10 @@ Key areas:
 
 * Company website: [Link](https://www.holosys.hr/)
 * Start date: 2018.09
-* End date: N/A
+* End date: 2019.04
 * Title: Embedded C++ engineer
 
-I am responsible for design and implementation of software running on IoT devices used for wireless water/gas metering.
+I was responsible for design and implementation of software running on IoT devices used for wireless water/gas metering. Later I became responsible for architecture design and implementation of build system/CI used by the entire embedded department.
 
 Key areas:
 
