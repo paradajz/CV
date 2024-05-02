@@ -119,7 +119,7 @@ Key areas:
 
 #### CI/CD engineer (until 2023.05)
 
-Was responsible for design and maintenance of CI system used by the embedded department.
+The role was based primarily on designing and maintaining CI infrastructure required for embedded software team on GitLab.
 
 Key areas:
 
@@ -130,11 +130,17 @@ Key areas:
 
 #### Senior Embedded Software Engineer (from 2023.05)
 
-Key areas:
+Things I've worked and am working on:
 
-* Project development in Zephyr RTOS
-* Infrastructural code design
-* Onboarding and mentorship for new and junior team members
+* Product development using Zephyr RTOS and C++
+* Implementation of low-level infrastructure
+* Repository organisation and CI setup
+* Development of generic state machine
+* Development of ROS-like publish/subscribe mechanism
+* Generalisation of developed modules for reusability across different repositories
+* Driver wrappers and mocks for easier testing and isolation of hardware from logic
+* Code generators reading various configuration files (YAML, JSON...)
+* Mentoring juniors
 
 ## Projects
 
