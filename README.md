@@ -7,22 +7,24 @@
   + [Globallogic](#globallogic)
   + [Holosys](#holosys)
   + [Globallogic](#globallogic)
-  + [Greyp](#greyp)
+  + [Greyp / Porsche eBike Performance](#greyp-porsche-ebike-performance)
 * [Projects](#projects)
   + [OpenDeck](#opendeck)
   + [Zvuk9](#zvuk9)
   + [PCB train](#pcb-train)
+  + [Powder applicator](#powder-applicator)
 
 ## Personal
 
 * `whoami`: Igor Petrović
+* Location: Zagreb, Croatia
 * Website: [Link](https://shanteacontrols.com/)
 * GitHub: [Link](https://github.com/paradajz)
 * Experience in:
   * Embedded software development
   * Zephyr RTOS
   * C++
-  * AVR8, STM32, nRF, RP2040
+  * AVR8, STM32, EFM, nRF, RP2040
   * Git
   * Linux
   * PCB design
@@ -66,7 +68,7 @@ Key areas:
 
 * Servo motor control
 * Touchscreen interface design
-* Software simulation of various mechanical parts
+* Software simulation of various mechanical parts (reverse engineering)
 
 ### Globallogic
 
@@ -111,7 +113,7 @@ Key areas:
 * Build infrastructure
 * CI
 
-### Porsche eBike Performance
+### Greyp / Porsche eBike Performance
 
 * Company website: [Link](https://www.porsche-ebike-performance.com/en/)
 * Start date: 2021.01
@@ -212,3 +214,31 @@ Main challenges:
 
 * Precise motor control
 * Design of mini-framework for defining the interface on display (icons, buttons, event handlers...)
+
+### Powder applicator
+
+Powder applicator is a machine used in DTF (Direct To Film) printing process.
+
+![](https://www.pantoon.be/media/catalog/product/cache/82ac16d6f30995b751622a449503d10a/v/i/visiopowdershaker_2.jpg)
+
+![](https://www.digitaltextileprinter.co.uk/wp-content/uploads/Creator-suite-60cm-power-applicator-740x450.png)
+
+The print process consists of:
+
+1) Printing on plastic film
+2) Applying powder on the film
+3) Heating of powder on the film in order to activate the adhesive (curing)
+4) Applying of the adhesive onto a fabric
+
+Of these, powder applicator is responsible for 2) and 3). The machine does the following:
+
+* Preheating of the melting chamber in which the material is being cured
+* Sensing of material in its input
+* Moving the material into the machine
+* Powder application
+* Powder curing
+* Rolling of cured material onto a drum
+
+The machine is operated with touchscreen which enables full machine configuration (timing control, temperature control, rotation control of stepper and BLDC motors, sensor sensitivity, automatic machine cleaning etc). Safety mechanisms such as overheating detection and sensor malfunction detection are implemented as well as novel PWM control of heating elements used to make the machine compatible with standard (non-industrial) power sockets (high current peaks are avoided).
+
+I was responsible for the electronic design of the entire machine and writing of firmware. The firmware is written in C++ using Zephyr RTOS. MCU used is STM32F767.
