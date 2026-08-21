@@ -1,0 +1,40 @@
+name: Build
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build-pdf:
+    name: Build PDF
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull the repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Install Grip
+        run: |
+          python -m venv "$HOME/.venvs/grip"
+          "$HOME/.venvs/grip/bin/python" -m pip install grip
+
+      - name: Set up Chrome
+        id: chrome
+        uses: browser-actions/setup-chrome@v2
+
+      - name: Build PDF
+        run: make
+        env:
+          CHROME: ${{ steps.chrome.outputs.chrome-path }} --no-sandbox
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv
+          path: cv.pdf
+          retention-days: 90
+          if-no-files-found: error
