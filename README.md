@@ -6,6 +6,7 @@ Senior Embedded Software Engineer — Zagreb, Croatia
 - [Summary](#summary)
 - [Education](#education)
 - [Work Experience](#work-experience)
+  - [Ototrak](#ototrak)
   - [Porsche eBike Performance](#porsche-ebike-performance)
   - [GlobalLogic](#globallogic)
   - [Holosys](#holosys)
@@ -61,9 +62,17 @@ Senior Embedded Software Engineer — Zagreb, Croatia
 
 ## Work Experience
 
+### Ototrak
+
+*September 2026 - Present*
+
+**Embedded Developer**
+
+* Jet ski tracking and control
+
 ### Porsche eBike Performance
 
-*Jan 2021 – Present*
+*Jan 2021 – August 2026*
 
 **Senior Embedded Software Engineer** (from May 2023)
 * Product development from scratch using Zephyr RTOS and C++ on experimental silicon
